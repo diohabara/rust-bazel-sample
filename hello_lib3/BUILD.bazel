@@ -14,3 +14,9 @@ rust_test(
     # deps = ["//some/dev/dep"],
 )
 
+rust_test(
+    name = "greet_test",
+    srcs = ["tests/greet.rs"],
+    crate = ":hello_lib3",
+)
+
